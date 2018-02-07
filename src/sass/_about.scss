@@ -1,0 +1,15 @@
+.about {
+  height: 100vh;
+  text-align: center;
+  p {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    p {font-size: 2em;}
+  }
+}

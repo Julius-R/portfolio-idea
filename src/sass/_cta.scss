@@ -1,0 +1,13 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-top: 2em;
+  background: $darkBlue;
+  height: 40px;
+  padding: 10px 30px;
+  text-align: right;
+  a:hover {
+    color: $black;
+  }
+}

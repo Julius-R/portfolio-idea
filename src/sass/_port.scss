@@ -1,0 +1,18 @@
+.portfolio {
+  text-align: center;
+  .title {margin: 50px auto;}
+  .row {
+    .col-4 {
+      img {
+        border-radius: 5px;
+        &:hover {
+          box-shadow: 0 0 20px 5px $darkBlue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {height: 100vh;}
+}

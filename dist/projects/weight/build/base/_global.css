@@ -1,0 +1,32 @@
+body {
+  background: #333;
+  color: #fff;
+}
+
+.container {
+  padding-top: 70px;
+}
+
+.gram {
+  background-color: $p1;
+}
+.gram-foot {
+  background-color: $p2;
+  border-top: solid $p2;
+}
+
+.kilo {
+  background-color: $g1;
+}
+.kilo-foot {
+  background-color: $g2;
+  border-top: solid $g2;
+}
+
+.ounce {
+  background-color: $r1;
+}
+.oz-foot {
+  background-color: $r2;
+  border-top: solid $r2;
+}

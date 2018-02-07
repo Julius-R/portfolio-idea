@@ -1,0 +1,99 @@
+.nav {
+  width: 100%;
+  height: 80px;
+  background: rgba(52, 52, 52, 1);
+  box-shadow: 0 0 20px 5px rgba(2, 2, 2, .4);
+  font-size: 1.5em;
+  position: fixed;
+  z-index: 30;
+  .container {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .social {
+      display: none;
+      li {
+        display: inline-block;
+        padding: 0 1.2em;
+        &:hover {
+          transform: scale(1.2);
+          color: $liteBlue;
+        }
+      }
+    }
+    .menu {
+      position: relative;
+      z-index: 1;
+      .menu-btn {
+        cursor: pointer;
+        ul {
+          padding-top: 90px;
+          position: absolute;
+          z-index: -70007;
+          text-align: center;
+          width: 70px;
+          top: -1060px;
+          right: -1em;
+          transition: .5s;
+          background-color: rgba(5,94,104,.8);
+          .list-item {
+            padding: .4em 0;
+            &:hover {
+              background: $liteBlue;
+            }
+          }
+        }
+        &:hover {
+          ul {
+            top: -1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .nav {
+    .container {
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .social {display: block;}
+      .menu {
+        position: relative;
+        z-index: 1;
+        .menu-btn {
+          cursor: pointer;
+          ul {
+            padding-top: 90px;
+            position: absolute;
+            z-index: -70007;
+            text-align: center;
+            width: 70px;
+            top: -1060px;
+            right: -1em;
+            transition: .5s;
+            background-color: rgba(5,94,104,.8);
+            .list-item {
+              padding: .4em 0;
+              &:hover {
+                background: $liteBlue;
+              }
+            }
+            .social-link {
+              display: none;
+            }
+          }
+          &:hover {
+            ul {
+              top: -1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

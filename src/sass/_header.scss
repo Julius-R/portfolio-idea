@@ -1,0 +1,76 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  .hero-content {
+    min-height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      width: 5px;
+      height: 150px;
+      background: $liteBlue;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+      width: 5px;
+      height: 150px;
+      background: $liteBlue;
+    }
+    .block-one {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+      width: 150px;
+      height: 5px;
+      background: $liteBlue;
+    }
+    .block-two {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      width: 150px;
+      height: 5px;
+      background: $liteBlue;
+    }
+    h3 {
+      font-size: 1.75em;
+      font-weight: 100;
+    }
+    .btn {
+      width: 200px;
+      margin: 50px auto;
+      background-color: $darkBlue;
+      border: none;
+      height: 40px;
+      color: $white;
+      font-size: 1.25em;
+      font-weight: 100;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .hero {
+    .hero-content {
+      &:after {left: 30px;}
+      &:before {right: 30px;}
+      .block-one {right: 30px;}
+      .block-two {left: 30px;}
+    }
+  }
+}
